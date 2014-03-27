@@ -9,3 +9,10 @@ NEWS
 *.cache
 ChangeLog
 configure
+m4/
+scripts/
+COPYING
+INSTALL
+Makefile
+aclocal.m4
+config.status

@@ -11,7 +11,7 @@ unxconf_SCRIPTS = \
 	buttons \
 	Xreset \
 	Xsetup \
-	Xstarup \
+	Xstartup \
 	chooser \
 	greeter \
 	xlogin \
