@@ -17,3 +17,4 @@ Makefile
 aclocal.m4
 config.status
 *.tar.xz
+configure.scan
