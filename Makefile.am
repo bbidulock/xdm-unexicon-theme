@@ -1,5 +1,5 @@
 
-unxconf_DATA = \
+dist_unxconf_DATA = \
 	background.jpg \
 	logo.xpm \
 	xdm-config \
@@ -7,7 +7,7 @@ unxconf_DATA = \
 	Xresources \
 	Xservers
 
-unxconf_SCRIPTS = \
+dist_unxconf_SCRIPTS = \
 	buttons \
 	Xreset \
 	Xsetup \
@@ -17,5 +17,5 @@ unxconf_SCRIPTS = \
 	xlogin \
 	Xsession
 
-systemd_DATA = \
+dist_systemd_DATA = \
 	xdm-unexicon.service
