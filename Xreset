@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "Executing $0 $@" >&2
+
+exec /etc/X11/xdm/Xreset

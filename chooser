@@ -1,0 +1,16 @@
+#!/bin/sh
+
+echo "Executing chooser $@ ..." >&2
+
+## the root window will not have a cursor otherwise
+xsetroot -cursor_name left_ptr
+
+if [ -x /usr/bin/hsetroot ]; then
+	/usr/bin/hsetroot -fill /etc/X11/xdm/unexicon/background.jpg
+fi
+
+if [ -x /usr/lib/X11/xdm/gchooser ]; then
+	exec /usr/lib/X11/xdm/gchooser $@
+fi
+
+exec /usr/lib/X11/xdm/chooser $@

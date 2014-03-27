@@ -1,0 +1,9 @@
+.*.sw[opq]
+Makefile.in
+configure.ac
+README
+AUTHORS
+AUTHORS.in
+NEWS
+*.log
+*.cache

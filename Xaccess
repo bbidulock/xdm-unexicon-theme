@@ -1,0 +1,20 @@
+# /etc/X11/xdm/unexicon/Xaccess
+#
+# Xaccess -- XDMCP access file
+#
+# Any host can get a login window.
+#
+*
+#
+# Any indirect host can get a chooser
+#
+#*		CHOOSER BROADCAST 239.192.1.1/16
+*		CHOOSER BROADCAST
+#
+# Listen on all unicast, IPv4 multicast and IPv6 multicast
+#
+LISTEN		*
+#LISTEN		* 239.192.1.1 ff01:0:0:0:0:0:0:12b ff02:0:0:0:0:0:0:12b ff03:0:0:0:0:0:0:12b ff04:0:0:0:0:0:0:12b ff05:0:0:0:0:0:0:12b
+#
+#
+#

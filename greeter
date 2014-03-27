@@ -1,0 +1,13 @@
+#!/bin/sh
+
+/usr/bin/env >&2
+
+echo "Executing slim -nodaemon..." >&2
+
+exec /usr/bin/slim -nodaemon
+
+# OBEYSESS_DISPLAY 0
+# REMANAGE_DISPLAY 1
+# UNMANAGE_DISPLAY 2
+# RESERVER_DISPLAY 3
+# OPENFAILED_DISPLAY 4

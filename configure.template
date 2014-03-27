@@ -1,0 +1,53 @@
+#                                               -*- Autoconf -*-
+# Process this file with autoconf to produce a configure script.
+
+AC_PREREQ([2.69])
+AC_INIT([xdm-unexicon-theme],[1.1],[http://github.com/bbidulock/xdm-unexicon-theme/issues],[xdm-unexicon-theme])
+AC_REVISION([1.1])
+
+AC_CONFIG_SRCDIR([xdm-config])
+
+# Checks for programs.
+AC_PROG_AWK
+AC_PROG_INSTALL
+AC_PROG_LN_S
+AC_PROG_MKDIR_P
+
+# Checks for libraries.
+
+# Checks for header files.
+
+# Checks for typedefs, structures, and compiler characteristics.
+
+# Checks for library functions.
+
+test "x$prefix" = xNONE && prefix="$ac_default_prefix"
+sharedir="$datadir"
+eval "sharedir=\"$sharedir\""
+eval "sharedir=\"$sharedir\""
+eval "sharedir=\"$sharedir\""
+
+AC_SUBST([sharedir])
+
+xdmconfdir='${sysconfdir}/X11/xdm'
+xdmdatadir='${datadir}/xdm'
+xdmlibsdir='${libdir}/X11/xdm'
+
+AC_SUBST([xdmconfdir])
+AC_SUBST([xdmdatadir])
+AC_SUBST([xdmlibsdir])
+
+unxconfdir='${xdmconfdir}/unexicon'
+unxdatadir='${xdmdatadir}/unexicon'
+unxlibsdir='${xdmlibsdir}/unexicon'
+
+AC_SUBST([unxconfdir])
+AC_SUBST([unxdatadir])
+AC_SUBST([unxlibsdir])
+
+systemddir='${libdir}/systemd/system'
+AC_SUBST([systemddir])
+
+AC_OUTPUT([Makefile])
+
+# vim: set ft=config:
