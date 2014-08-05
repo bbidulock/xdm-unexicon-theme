@@ -65,3 +65,5 @@ DisplayManager*systemPath:		/sbin:/bin:/usr/sbin:/usr/bin
 !DisplayManager._0.startup:		/etc/X11/xdm/GiveConsole
 !DisplayManager._0.reset:		/etc/X11/xdm/TakeConsole
 DisplayManager*loginmoveInterval:	10
+
+! vim: ft=xdefaults
