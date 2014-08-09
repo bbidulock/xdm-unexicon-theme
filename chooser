@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export XDE_DEBUG=1
+export XDG_VENDOR_ID=unexicon
 
 if [ -x /usr/bin/xde-xchooser ]; then
 	echo "Executing /usr/bin/xde-chooser $@ ..." >&2
