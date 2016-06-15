@@ -9,4 +9,4 @@
 # look like:
 #	XTerminalName:0 foreign
 #
-:0 local /usr/bin/X :0 -nolisten tcp vt07
+:0 local /usr/bin/X :0 -nolisten tcp -seat seat0 vt07
