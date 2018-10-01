@@ -3,9 +3,17 @@ xdm-unexicon-theme -- history of user-visible changes.  2018-09-30
 Release xdm-unexicon-theme-1.2 released 2018-09-30
 --------------------------------------------------
 
+git shortlog -e -n -w80,6,8 1.2...HEAD
+
+
+
+
+Release xdm-unexicon-theme-1.2 released 2018-09-30
+--------------------------------------------------
+
 git shortlog -e -n -w80,6,8 1.1...1.2
 
-Brian Bidulock <bidulock@openss7.org> (11):
+Brian Bidulock <bidulock@openss7.org> (12):
       update ignored files
       good build
       passes distcheck
@@ -17,6 +25,7 @@ Brian Bidulock <bidulock@openss7.org> (11):
       add missing files
       remove release files from ignore
       update build system
+      release update
 
 
 Release xdm-unexicon-theme-1.1 released 2014-03-27
