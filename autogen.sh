@@ -1,39 +1,36 @@
-#!/bin/bash
+#!/bin/sh
 
-PACKAGE='xdm-unexicon-theme'
-VERSION=
-DATE="`date -uI`"
+cd "$(dirname "$0")"
 
-if [ -z "$VERSION" ]; then
-	VERSION='0.1'
-	if [ -x "`which git 2>/dev/null`" -a -d .git ]; then
-		DATE=$(git log --date=iso|grep '^Date:'|head -1|awk '{print$2}')
-		VERSION=$(git describe --tags|sed 's,[-_],.,g;s,\.g.*$,,')
-		(
-		   echo -e "# created with git log --stat=75 -M -C | fmt -sct -w80\n"
-		   git log --stat=76 -M -C| fmt -sct -w80
-		)>ChangeLog
-		(
-		   echo "@PACKAGE@ -- authors file.  @DATE@"
-		   echo ""
-		   git log|grep '^Author:'|awk '{if(!authors[$0]){print$0;authors[$0]=1;}}'|tac
-		)>AUTHORS.in
+PACKAGE=$(grep AC_INIT configure.ac|head -1|sed -r 's,AC_INIT[(][[],,;s,[]].*,,')
+
+GTVERSION=$(gettext --version|head -1|awk '{print$NF}'|sed -r 's,(^[^\.]*\.[^\.]*\.[^\.]*)\..*$,\1,')
+
+if [ -x "`which git 2>/dev/null`" -a -d .git ]; then
+	VERSION=$(git describe --tags|sed 's,[-_],.,g;s,\.g.*$,,')
+	DATE=$(git show -s --format=%ci HEAD^{commit}|awk '{print$1}')
+	BRANCH=$(git tag --sort=-creatordate|head -1)
+	GNITS="gnits "
+	if [ "$VERSION" != "$BRANCH" ]; then
+		BRANCH="master"
+		GNITS=""
 	fi
+	sed -i.bak configure.ac -r \
+		-e "s:AC_INIT\([[]$PACKAGE[]],[[][^]]*[]]:AC_INIT([$PACKAGE],[$VERSION]:
+		    s:AC_REVISION\([[][^]]*[]]\):AC_REVISION([$VERSION]):
+		    s:^DATE=.*$:DATE='$DATE':
+		    s:^BRANCH=.*$:BRANCH='$BRANCH':
+		    s:^AM_GNU_GETTEXT_VERSION.*:AM_GNU_GETTEXT_VERSION([$GTVERSION]):
+		    s:^AM_INIT_AUTOMAKE\([[](gnits )?:AM_INIT_AUTOMAKE([$GNITS:"
+	subst="s:%%PACKAGE%%:$PACKAGE:g
+	       s:%%VERSION%%:$VERSION:g
+	       s:%%DATE%%:$DATE:g
+	       s:%%BRANCH%%:$BRANCH:g"
+else
+	sed -i.bak configure.ac -r \
+		-e "s:^AM_GNU_GETTEXT_VERSION.*:AM_GNU_GETTEXT_VERSION([$GTVERSION]):"
 fi
-
-sed -r -e "s:AC_INIT\([[]$PACKAGE[]],[[][^]]*[]]:AC_INIT([$PACKAGE],[$VERSION]:
-	   s:AC_REVISION\([[][^]]*[]]\):AC_REVISION([$VERSION]):
-	   s:^DATE=.*$:DATE='$DATE':" \
-	  configure.template >configure.ac
-
-subst="s:@PACKAGE@:$PACKAGE:g
-       s:@VERSION@:$VERSION:g
-       s:@DATE@:$DATE:g"
-
-sed -r -e "$subst" README.in >README
-sed -r -e "$subst" NEWS.in >NEWS
-sed -r -e "$subst" AUTHORS.in >AUTHORS
 
 mkdir m4 2>/dev/null
 
-autoreconf -fiv
+autoreconf -iv

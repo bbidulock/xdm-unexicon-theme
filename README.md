@@ -6,8 +6,7 @@ xdm-unexicon-theme
 Package xdm-unexicon-theme-1.2 was released under GPLv3 license 2018-09-30.
 
 This is an XDM theme for unexicon.  The source for xdm-unexicon-theme
-is hosted at (https://github.com/bbidulock/xdm-unexicon-theme).  What it
-includes
+is hosted at (https://github.com/bbidulock/xdm-unexicon-theme).  What it includes
 is all of the components necessary for the theme.
 
 
@@ -37,8 +36,7 @@ file [COPYING][9].
 Quick Start
 -----------
 
-The quickest and easiest way to get `xdm-unexicon-theme` up and running
-is to run
+The quickest and easiest way to get `xdm-unexicon-theme` up and running is to run
 the following commands:
 
     $> git clone https://github.com/bbidulock/xdm-unexicon-theme.git
@@ -48,8 +46,7 @@ the following commands:
     $> make
     $> make DESTDIR="$pkgdir" install
 
-This will configure, compile and install `xdm-unexicon-theme` the quickest.
-For
+This will configure, compile and install `xdm-unexicon-theme` the quickest.  For
 those who like to spend the extra 15 seconds reading `./configure
 --help`, some compile time options can be turned on and off before the
 build.

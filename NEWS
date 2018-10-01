@@ -1,9 +1,28 @@
-xdm-unexicon-theme -- history of user-visible changes.  2016-06-15
+xdm-unexicon-theme -- history of user-visible changes.  2018-09-30
 
-Release xdm-unexicon-theme-1.1.8 released 2016-06-15
--------------------------------------------
+Release xdm-unexicon-theme-1.2 released 2018-09-30
+--------------------------------------------------
 
-This is the initial development release of xdm-unexicon-theme.
+git shortlog -e -n -w80,6,8 1.1...1.2
+
+Brian Bidulock <bidulock@openss7.org> (10):
+      update ignored files
+      good build
+      passes distcheck
+      added ignore file
+      use multicast addresses too
+      change acess and chooser selection for xde-session
+      set vendor id in chooser, add maintainer scripts
+      set seat number on local displays
+      add missing files
+      remove release files from ignore
 
 
-# vim: set ft=asciidoc tw=72 nocin nosi fo+=tcqlorn:
+Release xdm-unexicon-theme-1.1 released 2014-03-27
+--------------------------------------------------
+
+git shortlog -e -n -w80,6,8 1.1
+
+Brian Bidulock <bidulock@openss7.org> (1):
+      initial commit
+
