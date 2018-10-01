@@ -1,0 +1,117 @@
+# created with git log --stat=75 -M -C | fmt -sct -w80
+
+commit 1f381594099301b310b8435496b97370681527e8
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed Jun 15 00:05:09 2016 -0600
+
+    set seat number on local displays
+
+ Xservers | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 89e0eab53b65612075c709ff100884f24a6c8d8b
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Fri Aug 8 23:54:44 2014 -0600
+
+    set vendor id in chooser, add maintainer scripts
+
+ chooser      |  2 +-
+ configure.sh | 38 ++++++++++++++++++++++++++++++++++++++
+ rebuild.sh   |  6 ++++++
+ 3 files changed, 45 insertions(+), 1 deletion(-)
+
+commit c69bfaf6910b687bbaca6c05bc53cb3b6ffdfeba
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Aug 5 08:43:31 2014 -0600
+
+    change acess and chooser selection for xde-session
+
+ Xaccess    | 8 ++++----
+ chooser    | 9 ++++++++-
+ xdm-config | 2 ++
+ 3 files changed, 14 insertions(+), 5 deletions(-)
+
+commit c045e80a59c7c9d583dd69407a9484c1cf6732d0
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Mar 27 10:26:03 2014 -0600
+
+    use multicast addresses too
+
+ Xaccess | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 76a46a8fe91405ff3ef5f09445901a2c43fd632c
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Mar 27 08:01:44 2014 -0600
+
+    added ignore file
+
+ .gitignore | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 0c98f2ad063fef1557d3d78d29b60206bfaa65bc
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Mar 27 07:51:40 2014 -0600
+
+    passes distcheck
+
+ .gitignore  | 1 +
+ Makefile.am | 6 +++---
+ 2 files changed, 4 insertions(+), 3 deletions(-)
+
+commit fff6ea235ad780347c0740f9110db5837c2858aa
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Mar 27 07:48:44 2014 -0600
+
+    good build
+
+ .gitignore         |  7 +++++++
+ Makefile.am        |  2 +-
+ configure.template | 10 +++++++++-
+ 3 files changed, 17 insertions(+), 2 deletions(-)
+
+commit 80e2199c43252b0ecf9bca6d341eacbc2c68b593
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Mar 27 07:39:24 2014 -0600
+
+    update ignored files
+
+ .gitignore |    2 +
+ ChangeLog  |    2 -
+ configure  | 3109 --------------------------------------------------------
+ 3 files changed, 2 insertions(+), 3111 deletions(-)
+
+commit a605e713cc7af70b81991b1b9001e09dc1036e69
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Mar 27 07:36:32 2014 -0600
+
+    initial commit
+
+ .gitignore           |    9 +
+ ChangeLog            |    2 +
+ GiveConsole          |   11 +
+ Makefile.am          |   21 +
+ NEWS.in              |    9 +
+ README.in            |   59 +
+ TakeConsole          |    6 +
+ Xaccess              |   20 +
+ Xreset               |    5 +
+ Xresources           |  269 ++++
+ Xservers             |   12 +
+ Xsession             |   50 +
+ Xsetup               |   21 +
+ Xsetup_0             |    2 +
+ Xstartup             |   11 +
+ Xwilling             |   11 +
+ autogen.sh           |   39 +
+ background.jpg       |  Bin 0 -> 908695 bytes
+ buttons              |   15 +
+ chooser              |   16 +
+ configure            | 3109 ++++++++++++++++++++++++++++++++++++++++++++++
+ configure.template   |   53 +
+ greeter              |   13 +
+ logo.xpm             |  423 +++++++
+ xdm-config           |   67 +
+ xdm-unexicon.service |   11 +
+ xlogin               |   13 +
+ 27 files changed, 4277 insertions(+)
