@@ -1,17 +1,12 @@
 .*.sw[opq]
 Makefile.in
 configure.ac
-README
-AUTHORS
 AUTHORS.in
-NEWS
 *.log
 *.cache
-ChangeLog
 configure
 m4/
 scripts/
-COPYING
 INSTALL
 Makefile
 aclocal.m4
