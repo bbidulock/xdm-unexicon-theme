@@ -1,11 +1,22 @@
-xdm-unexicon-theme -- history of user-visible changes.  2018-09-30
+xdm-unexicon-theme -- history of user-visible changes.  2018-10-01
 
-Release xdm-unexicon-theme-1.2 released 2018-09-30
+Release xdm-unexicon-theme-1.3 released 2018-10-01
 --------------------------------------------------
 
-git shortlog -e -n -w80,6,8 1.2...HEAD
+git shortlog -e -n -w80,6,8 1.3...HEAD
 
 
+
+
+Release xdm-unexicon-theme-1.3 released 2018-10-01
+--------------------------------------------------
+
+git shortlog -e -n -w80,6,8 1.2...1.3
+
+Brian Bidulock <bidulock@openss7.org> (3):
+      turn off numlock before launching slim
+      update release notes
+      update release files
 
 
 Release xdm-unexicon-theme-1.2 released 2018-09-30

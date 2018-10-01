@@ -1,9 +1,9 @@
-[xdm-unexicon-theme -- read me first file.  2018-09-30]: #
+[xdm-unexicon-theme -- read me first file.  2018-10-01]: #
 
 xdm-unexicon-theme
 ===============
 
-Package xdm-unexicon-theme-1.2 was released under GPLv3 license 2018-09-30.
+Package xdm-unexicon-theme-1.3 was released under GPLv3 license 2018-10-01.
 
 This is an XDM theme for unexicon.  The source for xdm-unexicon-theme
 is hosted at (https://github.com/bbidulock/xdm-unexicon-theme).  What it includes
@@ -13,7 +13,7 @@ is all of the components necessary for the theme.
 Release
 -------
 
-This is the `xdm-unexicon-theme-1.2` package, released 2018-09-30.  This
+This is the `xdm-unexicon-theme-1.3` package, released 2018-10-01.  This
 release, and the latest version, can be obtained from [GitHub][1], using
 a command such as:
 
@@ -70,12 +70,12 @@ Report issues on GitHub [here][2].
 
 [1]: https://github.com/bbidulock/xdm-unexicon-theme
 [2]: https://github.com/bbidulock/xdm-unexicon-theme/issues
-[3]: https://github.com/bbidulock/xdm-unexicon-theme/blob/1.2/NEWS
-[4]: https://github.com/bbidulock/xdm-unexicon-theme/blob/1.2/ChangeLog
-[5]: https://github.com/bbidulock/xdm-unexicon-theme/blob/1.2/TODO
-[6]: https://github.com/bbidulock/xdm-unexicon-theme/blob/1.2/COMPLIANCE
-[7]: https://github.com/bbidulock/xdm-unexicon-theme/blob/1.2/INSTALL
-[8]: https://github.com/bbidulock/xdm-unexicon-theme/blob/1.2/LICENSE
-[9]: https://github.com/bbidulock/xdm-unexicon-theme/blob/1.2/COPYING
+[3]: https://github.com/bbidulock/xdm-unexicon-theme/blob/1.3/NEWS
+[4]: https://github.com/bbidulock/xdm-unexicon-theme/blob/1.3/ChangeLog
+[5]: https://github.com/bbidulock/xdm-unexicon-theme/blob/1.3/TODO
+[6]: https://github.com/bbidulock/xdm-unexicon-theme/blob/1.3/COMPLIANCE
+[7]: https://github.com/bbidulock/xdm-unexicon-theme/blob/1.3/INSTALL
+[8]: https://github.com/bbidulock/xdm-unexicon-theme/blob/1.3/LICENSE
+[9]: https://github.com/bbidulock/xdm-unexicon-theme/blob/1.3/COPYING
 
 [ vim: set ft=markdown sw=4 tw=72 nocin nosi fo+=tcqlorn spell: ]: #
