@@ -2,6 +2,10 @@
 
 /usr/bin/env >&2
 
+if [ -x /usr/bin/numlockx ]; then
+	/usr/bin/numlockx off || :
+fi
+
 echo "Executing slim -nodaemon..." >&2
 
 exec /usr/bin/slim -nodaemon
