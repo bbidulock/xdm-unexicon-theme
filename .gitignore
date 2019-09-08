@@ -5,6 +5,7 @@ AUTHORS.in
 *.log
 *.cache
 configure
+cscope.files
 m4/
 scripts/
 INSTALL
