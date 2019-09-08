@@ -1,5 +1,109 @@
 # created with git log --stat=76 -M -C -500|fmt -sct -w80
 
+commit 057e6cb7289a76f3dc1c3204eb853f4250275491
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Sep 8 01:56:39 2019 -0600
+
+    ignore more products
+
+ .gitignore | 29 +++++++++++++++++++----------
+ 1 file changed, 19 insertions(+), 10 deletions(-)
+
+commit 368c6550e3457060b45ba9bee041c6d01fe50ba5
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Sep 8 01:52:51 2019 -0600
+
+    ignore cscope output
+
+ .gitignore | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit ecb9815b430759d44af97d148c24763bd9a45628
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Sep 8 01:52:18 2019 -0600
+
+    have better defaults and no c compiler
+
+ configure.sh | 4 ----
+ 1 file changed, 4 deletions(-)
+
+commit 3330ca62296835fbf180c62eeccb63bb20f623d1
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Sep 8 01:51:44 2019 -0600
+
+    build release notes with dist
+
+ dist.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 01ce5011031f733edd2632847b06fbe4a9bde978
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Sep 8 01:51:28 2019 -0600
+
+    place filename last in sed command
+
+ autogen.sh | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+commit 8416ba6cf852aa81ee4b40e4f9b227f129a9a86f
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Sep 8 01:51:10 2019 -0600
+
+    update release notes
+
+ RELEASE    | 13 +++++++------
+ RELEASE.md | 13 +++++++------
+ 2 files changed, 14 insertions(+), 12 deletions(-)
+
+commit 990282fae087a1f0c5fa388a8eda5f1b7122092b
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Sep 8 01:47:07 2019 -0600
+
+    build better release artifacts
+
+ Makefile.am | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+
+commit 6c64f214762ebc049cc8ffacb9e72a4fc005b2cd
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Sep 8 01:46:35 2019 -0600
+
+    build better NEWS file
+
+ gennews.sh | 19 +++++++++++++++++--
+ 1 file changed, 17 insertions(+), 2 deletions(-)
+
+commit f4536f7733a8d6a13f734fe6c047426c1901df1e
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Jun 17 22:58:29 2019 -0600
+
+    update for gettext 0.20.1
+
+ autogen.sh | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+commit 629231855d057b635db41a01eec90f2bbd252d78
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Fri Jan 18 10:43:28 2019 -0700
+
+    reformat TODO
+
+ TODO | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 70f9e5dc8405bb6dd0f60c55c1148e96a710d806
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Oct 1 00:01:04 2018 -0600
+
+    update release files
+
+ AUTHORS   |  2 +-
+ ChangeLog | 29 +++++++++++++++++++++++++++++
+ NEWS      | 17 ++++++++++++++---
+ README    | 20 ++++++++++----------
+ README.md | 20 ++++++++++----------
+ 5 files changed, 64 insertions(+), 24 deletions(-)
+
 commit a7b7b65e3aff558380de1ac746254c9604d8f7ed
 Author: Brian Bidulock <bidulock@openss7.org>
 Date:   Mon Oct 1 00:00:07 2018 -0600
